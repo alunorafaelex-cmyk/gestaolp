@@ -1,0 +1,6 @@
+{
+  "name": "GESTÃO LP MARKETING",
+  "description": "Sistema interno para registro de ações realizadas da LP Marketing com Supabase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -79,7 +79,7 @@ export function Login({ onOpenSqlModal }: LoginProps) {
                   Supabase ainda não configurado
                 </div>
                 <p className="text-[11px] leading-relaxed text-amber-800">
-                  Configure as variáveis <code className="font-mono bg-amber-100/70 px-1 py-0.5 rounded">VITE_SUPABASE_URL</code> e <code className="font-mono bg-amber-100/70 px-1 py-0.5 rounded">VITE_SUPABASE_ANON_KEY</code>.
+                  Configure as variáveis <code className="font-mono bg-amber-100/70 px-1 py-0.5 rounded">VITE_SUPABASE_URL</code> e <code className="font-mono bg-amber-100/70 px-1 py-0.5 rounded">VITE_SUPABASE_PUBLISHABLE_KEY</code>.
                 </p>
                 {onOpenSqlModal && (
                   <button

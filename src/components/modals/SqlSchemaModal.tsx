@@ -263,7 +263,7 @@ export function SqlSchemaModal({ isOpen, onClose }: SqlSchemaModalProps) {
           ) : (
             <form onSubmit={handleSaveCredentials} className="space-y-4">
               <p className="text-xs text-slate-600 leading-relaxed">
-                As variáveis de ambiente padrão são <code className="bg-slate-100 px-1 py-0.5 rounded font-mono">VITE_SUPABASE_URL</code> e <code className="bg-slate-100 px-1 py-0.5 rounded font-mono">VITE_SUPABASE_ANON_KEY</code>.
+                As variáveis de ambiente padrão são <code className="bg-slate-100 px-1 py-0.5 rounded font-mono">VITE_SUPABASE_URL</code> e <code className="bg-slate-100 px-1 py-0.5 rounded font-mono">VITE_SUPABASE_PUBLISHABLE_KEY</code>.
                 Se estiver testando nesta pré-visualização antes do deploy na Vercel, você também pode inserir suas credenciais aqui:
               </p>
 
@@ -282,11 +282,11 @@ export function SqlSchemaModal({ isOpen, onClose }: SqlSchemaModalProps) {
 
               <div>
                 <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
-                  Anon / Public Key (VITE_SUPABASE_ANON_KEY)
+                  Publishable Key (VITE_SUPABASE_PUBLISHABLE_KEY)
                 </label>
                 <input
                   type="text"
-                  placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+                  placeholder="sb_publishable_..."
                   value={keyInput}
                   onChange={(e) => setKeyInput(e.target.value)}
                   className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-lg text-xs font-mono text-slate-900 focus:outline-hidden focus:ring-2 focus:ring-cyan-500 focus:bg-white"
